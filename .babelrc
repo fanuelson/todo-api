@@ -1,0 +1,25 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      ["module-resolver", {
+        "root": ["./src"],
+        "alias": {
+          "@core": "./src/core",
+          "@validators": "./src/validators",
+          "@components": "./src/components",
+          "@dao": "./src/dao",
+          "@services": "./src/services",
+          "@model": "./src/model"
+        }
+      }]
+    ]
+  }
